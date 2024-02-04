@@ -364,6 +364,8 @@ img {
   overflow: hidden;
 }
 .page_header {
+  display: flex;
+  flex-direction: column;
   color: white;
   background-color: #242424;
 }
@@ -373,5 +375,37 @@ img {
   margin: 0;
   background-color: #f8f5f2;
   color: #000000;
+}
+.site-list {
+  outline: 3px solid rgba(21, 255, 0, 0.8);
+  outline-offset: -3px;
+}
+.user-list {
+  outline: 3px solid rgba(21, 255, 0, 0.8);
+  outline-offset: -3px;
+}
+.page_header__logo {
+  height: 85px;
+}
+@media (min-width: 768px) {
+  .page_header__logo {
+    order: 2;
+    height: 400px;
+  }
+}
+@media (min-width: 1068px) {
+  .page_header__logo {
+    height: 648px;
+  }
+}
+.main-nav {
+  outline: 2px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -2px;
+}
+@media (min-width: 768px) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=style.css.map */
