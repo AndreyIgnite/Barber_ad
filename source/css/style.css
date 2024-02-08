@@ -331,14 +331,14 @@ a {
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsansnarrow.woff2") format("woff2");
+  src: url("../fonts/ptsansnarrow.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsansnarrowbold.woff2") format("woff2");
+  src: url("../fonts/ptsansnarrowbold.woff2") format("woff2");
   font-display: swap;
 }
 html {
