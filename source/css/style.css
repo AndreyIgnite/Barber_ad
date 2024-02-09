@@ -393,9 +393,16 @@ img {
   }
 }
 .stats {
-  height: 542px;
+  height: 543px;
   background-color: #292929;
   color: white;
+}
+@media (min-width: 768px) {
+  .stats {
+    height: 497px;
+    width: auto;
+    margin: 0 auto;
+  }
 }
 .page_header__logo {
   height: 85px;
@@ -436,16 +443,36 @@ img {
   color: black;
   background-color: white;
 }
+@media (min-width: 768px) {
+  .stats__header {
+    padding: 25px 34px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-transform: none;
+  }
+}
 .stats__list {
   display: flex;
   flex-direction: column;
   background-color: #353535;
+}
+@media (min-width: 768px) {
+  .stats__list {
+    height: 318px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .stats__wrapper {
   display: flex;
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .stats__wrapper {
+    width: 640px;
+  }
 }
 .stats__intro {
   margin-bottom: 13px;
@@ -490,6 +517,7 @@ img {
   }
 }
 .stats__legend--mobile {
+  margin-top: auto;
   color: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 768px) {
