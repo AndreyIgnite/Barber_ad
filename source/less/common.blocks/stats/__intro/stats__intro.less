@@ -1,5 +1,5 @@
 .stats__intro {
-  margin-bottom: 13px;
+  //margin-bottom: 13px;
   text-align: center;
   text-transform: uppercase;
   color: black;
@@ -7,4 +7,10 @@
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: none;
+    text-align: left;
+  }
 }
