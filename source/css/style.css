@@ -402,6 +402,8 @@ img {
     height: 497px;
     width: auto;
     margin: 0 auto;
+    background-color: #353535;
+    position: relative;
   }
 }
 .page_header__logo {
@@ -447,7 +449,7 @@ img {
 }
 @media (min-width: 768px) {
   .stats__header {
-    height: 173px;
+    height: 179px;
     padding: 25px 34px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -466,6 +468,7 @@ img {
     height: 318px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 .stats__wrapper {
@@ -478,6 +481,8 @@ img {
 @media (min-width: 768px) {
   .stats__wrapper {
     width: 640px;
+    position: relative;
+    top: -179px;
   }
 }
 .stats__intro {
@@ -511,12 +516,24 @@ img {
   line-height: 20px;
 }
 .stats__item {
-  padding: 0 20px;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+@media (max-width: 767px) {
+  .stats__item {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 768px) {
+  .stats__item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0 34px;
+  }
 }
 .stats__item dt {
   font-weight: 700;
@@ -533,8 +550,14 @@ img {
 .stats__item:first-child {
   background-color: rgba(45, 38, 130, 0.05);
 }
-.stats__item:nth-child(2n) {
+.stats__item:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.12);
+}
+@media (min-width: 768px) {
+  .stats__item:first-child,
+  .stats__item:last-child {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
 }
 .stats__legend--dekstop {
   color: rgba(0, 0, 0, 0.3);

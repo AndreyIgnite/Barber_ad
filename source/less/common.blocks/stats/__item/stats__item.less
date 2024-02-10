@@ -1,10 +1,18 @@
 .stats__item {
+  @media (max-width: @mobile-width-only) {
   padding: 0 20px;
+  }
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0 34px;
+  }
 }
 .stats__item dt {
   font-weight: 700;
@@ -21,6 +29,13 @@
 .stats__item:first-child {
   background-color: rgba(45, 38, 130, 0.05);
 }
-.stats__item:nth-child(2n) {
+.stats__item:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+@media (min-width: @tablet-width) {
+  .stats__item:first-child, .stats__item:last-child {
+  background-color: rgba(255, 255, 255, 0.05);
+  }
 }
