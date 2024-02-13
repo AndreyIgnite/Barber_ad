@@ -9,15 +9,21 @@
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
+    align-items: flex-start;
     height: auto;
-    padding: 0 34px;
+    padding: 25px 34px 30px;
   }
 }
 .stats__item dt {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
+  @media (min-width: @tablet-width) {
+    font-size: 72px;
+    line-height: 62px;
+  }
 }
 .stats__item dd {
   max-width: 90px;
@@ -25,6 +31,13 @@
   font-size: 18px;
   line-height: 18px;
   text-align: right;
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
 }
 .stats__item:first-child {
   background-color: rgba(45, 38, 130, 0.05);
