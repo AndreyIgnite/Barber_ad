@@ -1,10 +1,31 @@
 .page_header__logo {
   height: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media (min-width: @tablet-width) {
     order: 2;
     height: 400px;
+    background-color: black;
+    background-image: url(../images/back-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% -15px;
+    background-size: cover;
   }
   @media (min-width: @desktop-width) {
+    background-image: url(../images/back-desktop.jpg);
+    background-position: 50% 0;
     height: 648px;
+  }
+}
+.page_header__logo img {
+  width: 226px;
+  height: 85px;
+  @media (min-width: @tablet-width) {
+    margin-top: 39px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 57px;
   }
 }
