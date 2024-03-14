@@ -409,6 +409,16 @@ img {
     width: 780px;
   }
 }
+.site-list a {
+  display: block;
+  padding: 12px 21px 13px;
+  border-bottom: 1px solid #71543f;
+  border-top: 1px solid #886e5b;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 @media (min-width: 700px) {
   .user-list {
     width: 60px;
@@ -479,6 +489,46 @@ img {
   width: auto;
   min-height: 51px;
 }
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  left: 17px;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+.main-nav--opened .main-nav__toggle {
+  right: auto;
+  left: 0;
+}
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 24px;
+  left: 18px;
+  width: 36px;
+  height: 2px;
+  background-color: white;
+}
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(45deg);
+}
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(-45deg);
+}
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .main-nav__toggle {
   position: absolute;
   top: 0;
@@ -487,6 +537,7 @@ img {
   border: none;
   cursor: pointer;
   display: block;
+  z-index: 3;
   width: 70px;
   height: 50px;
 }
@@ -667,6 +718,27 @@ img {
   .stats__item:last-child {
     background-color: rgba(255, 255, 255, 0.05);
   }
+}
+.user-list__login {
+  position: relative;
+  display: block;
+  padding-left: 47px;
+  padding-right: 21px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.user-list__login .user-list__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: 19px;
+  margin: auto 0;
+  fill: white;
+  opacity: 0.3;
 }
 .stats__legend--dekstop {
   color: rgba(0, 0, 0, 0.3);

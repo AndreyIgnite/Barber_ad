@@ -12,7 +12,7 @@
         <a class="page_header__logo" href="index.html">
           <img src="images/logotype_mobile.svg" width="226" height="30" />
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -37,15 +37,15 @@
             <div class="main-nav__list user-list">
               <a class="user-list__login" href="#">
                 <svg
+                  class="user-list__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
-                  fill="none"
                 >
-                  <g opacity="0.3">
-                    <path d="M7 2H14V14H7V16H16V0H7V2Z" fill="white" />
-                    <path d="M7 9H0V7H7V4L11 8L7 12V9Z" fill="white" />
+                  <g>
+                    <path d="M7 2H14V14H7V16H16V0H7V2Z" />
+                    <path d="M7 9H0V7H7V4L11 8L7 12V9Z" />
                   </g>
                 </svg>
                 Войти
@@ -300,5 +300,6 @@
         </div>
       </footer>
     </div>
+    <script src="/less/common.blocks/main-nav/__toggle/main-nav__toggle.js"></script>
   </body>
 </html>
