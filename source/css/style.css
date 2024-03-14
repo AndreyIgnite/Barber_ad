@@ -529,6 +529,12 @@ img {
 .main-nav--opened .main-nav__toggle:active::after {
   background-color: rgba(255, 255, 255, 0.3);
 }
+.main-nav--closed .site-list {
+  display: none;
+}
+.main-nav--closed .user-list {
+  display: none;
+}
 .main-nav__toggle {
   position: absolute;
   top: 0;
@@ -539,7 +545,7 @@ img {
   display: block;
   z-index: 3;
   width: 70px;
-  height: 50px;
+  height: 51px;
 }
 .main-nav__toggle:hover,
 .main-nav__toggle:active {
@@ -729,6 +735,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  background-color: #6a4d38;
 }
 .user-list__login .user-list__icon {
   position: absolute;
