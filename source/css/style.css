@@ -529,8 +529,16 @@ img {
 .main-nav--opened .main-nav__toggle:active::after {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.main-nav--closed .site-list {
+.main-nav--closed .site-list__item {
   display: none;
+}
+.main-nav--closed .site-list__item--current {
+  display: block;
+}
+.main-nav--closed .site-list__item a {
+  padding-right: 70px;
+  padding-left: 70px;
+  text-align: center;
 }
 .main-nav--closed .user-list {
   display: none;
