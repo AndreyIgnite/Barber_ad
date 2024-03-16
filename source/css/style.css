@@ -412,6 +412,7 @@ img {
 .site-list a {
   display: block;
   padding: 12px 21px 13px;
+  background-color: #826550;
   border-bottom: 1px solid #71543f;
   border-top: 1px solid #886e5b;
   font-size: 18px;
@@ -563,6 +564,15 @@ img {
   .main-nav__toggle {
     display: none;
   }
+}
+.main-nav--opened .main-nav__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 70px;
+  z-index: 10;
+  min-height: 80vh;
+  background-color: #6a4d38;
 }
 @media (min-width: 700px) {
   .main-nav__wrapper {
