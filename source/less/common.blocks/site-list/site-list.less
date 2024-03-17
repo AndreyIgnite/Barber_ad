@@ -16,4 +16,31 @@
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  &:hover {
+    background-color: rgba(117, 90, 70, 1);
+  }
+  &:active {
+    background-color: rgba(106, 77, 56, 1);
+    opacity: 0.3;
+  }
+}
+.main-nav--closed .site-list__item a {
+  padding-right: 70px;
+  padding-left: 70px;
+  text-align: center;
+}
+.main-nav--closed .site-list__item {
+  display: none;
+  &--current {
+    display: block;
+  }
+}
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+.main-nav--nojs .site-list__item a {
+  padding-right: 21px;
+  padding-left: 21px;
+  text-align: left;
 }
