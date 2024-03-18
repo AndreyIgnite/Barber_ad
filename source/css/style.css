@@ -504,7 +504,6 @@ img {
   }
 }
 .stats {
-  height: 542px;
   background-color: #292929;
   color: white;
 }
@@ -712,6 +711,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: #353535;
+  margin-bottom: 20px;
 }
 @media (min-width: 700px) {
   .stats__list {
@@ -724,9 +724,7 @@ img {
 .stats__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 100%;
-  margin: 0 auto;
+  width: 100%;
 }
 @media (min-width: 700px) {
   .stats__wrapper {
@@ -759,6 +757,8 @@ img {
   }
 }
 .stats__slogan {
+  max-width: 280px;
+  margin: 0 auto;
   text-align: center;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-weight: 400;
