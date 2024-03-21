@@ -21,14 +21,21 @@
   @media (min-width: @tablet-width) {
     position: static;
     margin: 0;
+    margin-right: 10px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: 19px;
   }
 }
 @media (min-width: @tablet-width) {
   .user-list__login span {
-    display: none;
+    position: absolute;
+    opacity: 0;
   }
   .user-list__login {
-    padding: 28px 31px;
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
   }
   .user-list__login:hover .user-list__icon {
     fill: rgba(130, 101, 80, 1);
@@ -37,5 +44,32 @@
   .user-list__login:active .user-list__icon {
     opacity: 0.3;
     fill: white;
+  }
+}
+@media (min-width: @desktop-width) {
+  .user-list__login span {
+    position: static;
+    opacity: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .user-list__login {
+    padding-left: 32px;
+    padding-right: 20px;
+  }
+  .user-list__login:hover {
+    background-color: white;
+    color: black;
+  }
+  .user-list__login:hover .user-list__icon {
+    fill: black;
+    opacity: 0.3;
+  }
+  .user-list__login:active .user-list__icon {
+    fill: black;
+    opacity: 0.1;
+  }
+  .user-list__login:active span {
+    opacity: 0.3;
   }
 }
