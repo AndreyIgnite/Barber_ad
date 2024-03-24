@@ -9,15 +9,13 @@
     padding: 25px 34px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 105px;
     text-transform: none;
   }
   @media (min-width: @desktop-width) {
-    height: 322px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 32px;
-    padding-right: 85px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content 1fr min-content;
+    padding: 32px 34px 30px;
   }
 }
 @media (min-width: @tablet-width) {

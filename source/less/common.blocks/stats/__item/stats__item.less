@@ -18,7 +18,7 @@
 .stats__item dt {
   font-weight: 700;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 1;
   sup {
     position: static;
     margin-left: 5px;
@@ -27,8 +27,11 @@
   }
   @media (min-width: @tablet-width) {
     font-size: 72px;
-    line-height: 62px;
+    line-height: 1;
     margin-bottom: 12px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 7px;
   }
 }
 .stats__item dd {
@@ -44,6 +47,10 @@
     br {
       display: none;
     }
+  }
+  @media (min-width: @desktop-width) {
+    line-height: 27px;
+    font-size: 20px;
   }
 }
 .stats__item:first-child {
